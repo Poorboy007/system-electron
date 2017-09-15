@@ -1,0 +1,7 @@
+/.idea/
+*.iml
+.project
+/.vs
+/dist
+/node_modules
+/obj/ 

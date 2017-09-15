@@ -1,0 +1,33 @@
+{
+  "name": "synsystem-el",
+  "version": "1.4.0",
+  "description": "An Electron application for SynSystem",
+  "main": "src/main.js", 
+  "author": "Hunter",
+  "scripts": {
+    "start": "electron src/main.js",
+    "build": "./scripts/build-all.sh",
+    "build:osx": "./scripts/build.sh darwin x64",
+    "build:osx64": "./scripts/build.sh darwin x64",
+    "build:linux32": "./scripts/build.sh linux ia32",
+    "build:linux": "./scripts/build.sh linux x64",
+    "build:linux64": "./scripts/build.sh linux x64",
+    "build:win": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win32": ".\\scripts\\build-win32.bat win32 ia32",
+    "build:win64": ".\\scripts\\build-win32.bat win32 x64"
+  }, 
+  "dependencies": {
+    "electron-packager": "^7.0.0",
+    "electron": "^1.5.1",
+    "pinyin": "^2.7.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.1.2" 
+
+  }
+}

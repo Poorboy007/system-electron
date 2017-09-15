@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>System-EL</Name>
+    <RootNamespace>SynSystem-EL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6170cbd3-2eb7-4934-8213-dd6df717e2ec</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\common.js" />
+    <Compile Include="src\inject\preload.js" />
+    <Compile Include="src\main.js" />
+    <Compile Include="src\windows\controllers\apptray.js" />
+    <Compile Include="src\windows\controllers\splash.js" />
+    <Compile Include="src\windows\controllers\system.js" />
+    <Compile Include="src\windows\views\app\assets\js\bootstrap-checkbox-radio-switch.js" />
+    <Compile Include="src\windows\views\app\assets\js\bootstrap-notify.js" />
+    <Compile Include="src\windows\views\app\assets\js\bootstrap-select.js" />
+    <Compile Include="src\windows\views\app\assets\js\bootstrap.min.js" />
+    <Compile Include="src\windows\views\app\assets\js\chartist.min.js" />
+    <Compile Include="src\windows\views\app\assets\js\demo.js" />
+    <Compile Include="src\windows\views\app\assets\js\jquery-1.10.2.js" />
+    <Compile Include="src\windows\views\app\assets\js\light-bootstrap-dashboard.js" />
+    <Content Include="assets\icon.png" />
+    <Content Include="assets\loading.gif" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="scripts\build-all.sh" />
+    <Content Include="scripts\build-win32.bat" />
+    <Content Include="scripts\build.sh" />
+    <Content Include="scripts\qiniu.sh" />
+    <Content Include="scripts\tar-all.sh" />
+    <Content Include="src\windows\styles\splash.css" />
+    <Content Include="src\windows\views\appLogin.html" />
+    <Content Include="src\windows\views\app\assets\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\css\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\css\animate.min.css" />
+    <Content Include="src\windows\views\app\assets\css\bootstrap.min.css" />
+    <Content Include="src\windows\views\app\assets\css\demo.css" />
+    <Content Include="src\windows\views\app\assets\css\light-bootstrap-dashboard.css" />
+    <Content Include="src\windows\views\app\assets\css\pe-icon-7-stroke.css" />
+    <Content Include="src\windows\views\app\assets\fonts\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="src\windows\views\app\assets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="src\windows\views\app\assets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="src\windows\views\app\assets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="src\windows\views\app\assets\img\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\img\default-avatar.png" />
+    <Content Include="src\windows\views\app\assets\img\faces\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-0.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-1.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-2.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-3.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-4.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-5.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-6.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\face-7.jpg" />
+    <Content Include="src\windows\views\app\assets\img\faces\tim_vector.jpe" />
+    <Content Include="src\windows\views\app\assets\img\favicon.ico" />
+    <Content Include="src\windows\views\app\assets\img\loading-bubbles.svg" />
+    <Content Include="src\windows\views\app\assets\img\mask.png" />
+    <Content Include="src\windows\views\app\assets\img\new_logo.png" />
+    <Content Include="src\windows\views\app\assets\img\sidebar-1.jpg" />
+    <Content Include="src\windows\views\app\assets\img\sidebar-2.jpg" />
+    <Content Include="src\windows\views\app\assets\img\sidebar-3.jpg" />
+    <Content Include="src\windows\views\app\assets\img\sidebar-4.jpg" />
+    <Content Include="src\windows\views\app\assets\img\sidebar-5.jpg" />
+    <Content Include="src\windows\views\app\assets\img\tim_80x80.png" />
+    <Content Include="src\windows\views\app\assets\sass\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\.DS_Store" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_cards.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_icons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_labels.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_alerts.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_cards.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_carousel.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_chartist.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_collapse.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_datepicker.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_dropdown.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_flexisel.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_footers.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_icons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_inputs.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_labels.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_media.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_misc.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_mixins.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_modal.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_morphing-buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_navbars.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_progress-bars.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_responsive.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_sections.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_sliders.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_social-buttons.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_tables.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_tabs-navs-pagination.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_tags.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_tooltips-and-popovers.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_typography.scss" />
+    <Content Include="src\windows\views\app\assets\sass\lbd\_variables.scss" />
+    <Content Include="src\windows\views\app\assets\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="src\windows\views\app\icons.html" />
+    <Content Include="src\windows\views\app\index.html" />
+    <Content Include="src\windows\views\app\maps.html" />
+    <Content Include="src\windows\views\app\notifications.html" />
+    <Content Include="src\windows\views\app\table.html" />
+    <Content Include="src\windows\views\app\template.html" />
+    <Content Include="src\windows\views\app\typography.html" />
+    <Content Include="src\windows\views\app\upgrade.html" />
+    <Content Include="src\windows\views\app\user.html" />
+    <Content Include="src\windows\views\splash-tmp.html" />
+    <Content Include="src\windows\views\splash.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="scripts\" />
+    <Folder Include="src\" />
+    <Folder Include="src\inject\" />
+    <Folder Include="src\windows\" />
+    <Folder Include="src\windows\controllers\" />
+    <Folder Include="src\windows\styles\" />
+    <Folder Include="src\windows\views\" />
+    <Folder Include="src\windows\views\app\" />
+    <Folder Include="src\windows\views\app\assets\" />
+    <Folder Include="src\windows\views\app\assets\css\" />
+    <Folder Include="src\windows\views\app\assets\fonts\" />
+    <Folder Include="src\windows\views\app\assets\img\" />
+    <Folder Include="src\windows\views\app\assets\img\faces\" />
+    <Folder Include="src\windows\views\app\assets\js\" />
+    <Folder Include="src\windows\views\app\assets\sass\" />
+    <Folder Include="src\windows\views\app\assets\sass\lbd\" />
+    <Folder Include="src\windows\views\app\assets\sass\lbd\mixins\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\electron-packager\" />
+    <Folder Include="typings\globals\electron\" />
+    <Folder Include="typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\electron-packager\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\electron\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "electron": "registry:dt/electron#1.4.8+20170316233216",
+    "electron-packager": "registry:dt/electron-packager#5.1.0+20160510010627",
+    "node": "registry:dt/node#7.0.0+20170322231424"
+  }
+}
